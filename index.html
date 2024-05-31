@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "pt-pt">
+    <head>
+        <meta charset = "utf-8"/>
+        <title>Site inicial</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type = "text/css" href = "style.css">
+        <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--tag para tornar site responsivo-->
+    </head>
+
+    <body>
+        <header>
+            <h1>UFCD 0768 - Criação de sites web</h1>
+        </header>
+        <!--Barra de navegação-->
+        
+        <!--<nav>
+            <a href = "index.html">Índex</a>
+            <a href = "outros_cursos.html">Outros Cursos</a>
+            <a href = "contactos.html">Contactos</a>
+            <a href = "recursos.html">Recursos</a>
+        </nav> este código foi alterado para o código abaixo para tornar a navegação responsiva, nav passou a class, foi necessário fazer correção no CSS-->
+       
+        <div class="nav" id="mynav">
+            <a href ="index.html" class="active">Índex</a>
+            <a href ="outros_cursos.html">Outros Cursos</a>
+            <a href ="contactos.html">Contactos</a>
+            <a href ="recursos.html">Recursos</a>
+            <a href="javascript:void(0);" class="icon active" onclick="myFunction()">&equiv;</a><!--para criação do botão para o menu-->
+        </div>
+
+        <!--Função para responsividade da barra de navegação-->
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("mynav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+            }
+        </script>
+
+        <main>
+            <h2>HTML e CSS</h2>
+            <p class="pindex">A Internet utiliza uma linguagem que permite formatar as páginas web que visitamos.
+            <span class="spanbold">HTML</span> significa <span class="spanitalic">Hiper Text Markup Language</span> 
+            e é uma linguagem utilizada para criar páginas com hipertexto (com hiperligações). Os sinais de menor e de maior
+             <> delimitam as tags (etiquetas). O símbolo / permite fechar a tag.</p>
+            <h3>Lista de editores</h3>
+            <ul>
+                <li>Notepad++;</li>
+                <li>Visual Studio Code;</li>
+                <li>Brackets;</li>
+                <li>Sublime</li>
+            </ul>
+            <img src="img/html.jpg" class="imgindex">
+            <img src="img/CSS.png" class="imgindexCSS">
+            <table>
+                <tr>
+                    <th>tag</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td>form</td>
+                    <td>Tag de HTML que permite criar um formulário</td>
+                </tr>
+                <tr>
+                    <td>input</td>
+                    <td>Tag de HTML que permite inserir dados num formulário</td>
+                </tr>
+            </table>
+    
+        </main>
+        
+        <aside>
+            <h2>Ligações Úteis</h2>
+            <a href="https://www.citeforma.pt/" target="_blank"><img src="img/citeforma.png" class = "logoaside"></a>
+            <a href="https://www.w3schools.com/" target="_blank"><img src="img/w3schools.jpg" class = "logoaside"></a>
+            <a href="https://www.codewars.com/" target="_blank"><img src="img/codewars.jfif" class = "logoaside"></a>
+        </aside>
+        
+        <footer>
+            <p class="rodapetext">Artur Antunes
+            <br>             
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="blank" class="rodapehiperligacao"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br /><span class="rodapehiperligacao"> trabalho está licenciado com uma Licença</span><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="blank" class="rodapehiperligacao">Creative Commons - Atribuição-NãoComercial-SemDerivações 4.0 Internacional.</a>
+            <br>
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" class = "logosociais"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.jfif" class = "logosociais"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin.png" class = "logosociais"></a>
+            </P>
+        </footer>
+        
+        
+     
+
+    </body>
+
+
+</html>
